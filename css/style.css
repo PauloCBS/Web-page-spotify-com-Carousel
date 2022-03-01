@@ -1,0 +1,207 @@
+/* Layout */
+
+body{
+    background: url(../imagens/capa.png),
+                url(../imagens/ruido.png),
+                linear-gradient(30deg, #ff4169, #7c26f8);
+
+    background-attachment: fixed; 
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Barra de navegação */
+.navbar-transparente{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color:rgb(0,0,0,0.8);
+    
+}
+
+/* seção 1 */
+
+html, body, #secao1 {
+    height: 100%;
+}
+
+.capa{
+    text-align: center;
+}
+
+.texto__principal{
+
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius:500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20pxs;
+    
+}
+
+.btn-roxo{
+    background-color: #7110fa6c;
+  
+}
+
+.btn-roxo:hover{
+    background-color: #6307e318;
+    color: black;
+}
+
+.btn-branco{
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+.btn-branco:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+
+/* Media Query */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .texto__principal{
+        font-size: 2em;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+  }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    .texto__principal{
+        font-size: 3em;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+ }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+    .texto__principal{
+        font-size: 4em;
+    }
+ }
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+    .texto__principal{
+        font-size: 5em;
+    }
+  }
+
+/* Extra large devices (large desktops)*/
+
+@media (max-width: 1199.98px) {
+
+    .texto__principal{
+        font-size: 6em;
+    }
+  }
+/* No media query since the extra-large breakpoint has no upper bound on its width*/
+
+/* seção 2 */
+
+#servicos{
+    background-color: white;
+    padding: 20px 20px;
+}
+
+#servicos h2, h3{
+    color: #7c26f8;
+}
+
+#servicos p{
+    color:black
+}
+
+.albuns{
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+/* seção 3 */
+
+#recursos h2, p {
+ color: white;
+}
+
+#recursos h2{
+    margin-top: 15px;
+}
+
+
+#recursos h3{
+    color: lightblue;
+}
+
+.rotacionar{
+    -ms-transform: rotate(27sdeg);
+    -webkit-transform: rotate(27deg);
+    transform: rotate(27deg);
+    padding-left: 50px;
+}
+
+/* footer */
+
+#rodape {
+    background-color: black;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+#rodape h4 {
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+#rodape .navbar-nav a{
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+#rodape ul {
+    list-style: none;
+}
+
+.redes ul li{
+    float: right;
+    margin: 0px 5px;
+}
